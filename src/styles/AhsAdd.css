@@ -1,0 +1,122 @@
+/* ===== Style untuk halaman Tambah AHS ===== */
+
+.ahs-add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+
+.ahs-add-card {
+  background-color: #ffffff;
+  width: 420px;
+  padding: 35px 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.ahs-add-card h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 1.6rem;
+  color: #1e1e2f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.ahs-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.ahs-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.ahs-form input:focus {
+  outline: none;
+  border-color: #4a3aff;
+  box-shadow: 0 0 4px rgba(74, 58, 255, 0.3);
+}
+
+.item-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-search input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.item-search button {
+  background-color: #4a3aff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.item-search button:hover {
+  background-color: #3529c9;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #4a3aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #3529c9;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* KODE BARU di AhsAdd.css */
+.ahs-add-container {
+  /* Hapus flex, justify-content, align-items, min-height */
+  padding: 24px; /* Biarkan padding agar tidak menempel */
+}
+/* Di src/styles/AhsAdd.css */
+
+.ahs-add-container {
+  /* Kita hanya perlu padding agar tidak menempel di tepi */
+  padding: 24px;
+}
+
+/* (Semua style untuk .ahs-add-card sudah dihapus) */
+/* (Semua style 'display: flex', 'justify-content' 
+   di .ahs-add-container sudah dihapus) */

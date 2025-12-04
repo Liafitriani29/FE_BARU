@@ -1,0 +1,69 @@
+/* ====== Table Styling ====== */
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+.ahs-table thead {
+  background-color: #2E1878; /* ungu dashboard */
+  color: white;
+  text-align: left;
+}
+
+.ahs-table th {
+  padding: 12px 15px;
+  font-weight: 600;
+}
+
+/* Isi tabel */
+.ahs-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Hover efek baris */
+.ahs-table tbody tr:hover {
+  background-color: #f5f6fa;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Link tombol aksi */
+.view-link {
+  color: #2E1878;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid #2E1878;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.view-link:hover {
+  background-color: #2E1878;
+  color: white;
+}
+
+/* Tombol kembali */
+.back-link {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 6px 12px;
+  background-color: #2E1878;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.back-link:hover {
+  background-color: #4627aa;
+}

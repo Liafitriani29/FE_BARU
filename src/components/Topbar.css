@@ -1,0 +1,182 @@
+/* === 1. TOPBAR CONTAINER === 
+   Mengadaptasi .topbar-container dari CSS Anda.
+   Saya tambahkan margin: 20px agar "mengambang" dan berjarak dari sidebar sesuai foto.
+*/
+.topbar {
+  background-color: white;
+  padding: 15px 20px;
+  /* Sesuai request */
+  border-radius: 10px;
+  /* Sesuai request */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* Sesuai request */
+  margin: 20px;
+  /* Memberikan jarak 'floating' dari sidebar & atas */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Input Kiri, Tombol Kanan */
+  flex-wrap: wrap;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Font request */
+}
+
+/* === 2. GRUP INPUT (KIRI) === 
+   Mengadaptasi .topbar-left
+*/
+.input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  flex-wrap: nowrap;
+  /* Menjaga agar tetap satu baris */
+}
+
+/* === 3. STYLING INPUT === 
+   Mengadaptasi .topbar-container input
+*/
+.uniform-input {
+  height: 40px;
+  /* Tinggi Paten Sesuai Request */
+  padding: 0 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: 0.2s;
+  width: 200px;
+  /* Lebar default sesuai request */
+  font-family: inherit;
+}
+
+.uniform-input:focus {
+  border-color: #5e4b8b;
+  /* Fokus warna Ungu */
+  box-shadow: 0 0 0 3px rgba(94, 75, 139, 0.1);
+}
+
+/* Styling Khusus Input Tahun */
+.input-tahun {
+  width: 100px !important;
+  /* Sesuai request */
+  text-align: center;
+}
+
+/* === 4. SEARCH WRAPPER & ICON === 
+   Mengadaptasi .input-wrapper dan .icon-search
+*/
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  /* Sedikit disesuaikan agar pas */
+  color: #888;
+  pointer-events: none;
+}
+
+.search-with-icon {
+  padding-left: 36px !important;
+  /* Ruang untuk ikon */
+  width: 220px;
+  /* Search sedikit lebih lebar */
+}
+
+/* === 5. GRUP TOMBOL (KANAN) === 
+   Mengadaptasi .topbar-right
+*/
+.topbar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+/* === 6. STYLING TOMBOL === 
+   Mengadaptasi .btn-action
+*/
+.btn-blue,
+.btn-green {
+  height: 40px;
+  /* Tinggi Paten sama dengan input */
+  padding: 0 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: opacity 0.2s, background-color 0.2s;
+  white-space: nowrap;
+  font-family: inherit;
+
+  /* WARNA: 
+     Saya set default ke Ungu (#5e4b8b) agar sesuai FOTO REFERENSI.
+     Jika ingin kembali ke Biru/Hijau sesuai teks CSS Anda, 
+     ubah kode hex di bawah ini.
+  */
+  background-color: #5e4b8b;
+}
+
+.btn-blue:hover,
+.btn-green:hover {
+  background-color: #4a3a6e;
+  /* Ungu Gelap saat hover */
+  opacity: 1;
+  /* Reset opacity karena kita pakai perubahan warna */
+}
+
+/* === 7. DROPDOWN MENU === 
+   Tambahan agar dropdown tetap rapi
+*/
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 6px 0;
+  z-index: 100;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 16px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  color: #444;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f5f3fa;
+  color: #5e4b8b;
+}

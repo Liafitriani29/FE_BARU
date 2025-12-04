@@ -1,0 +1,38 @@
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.ahs-table th, 
+.ahs-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.ahs-table th {
+  background-color: #2E1878;  /* ungu khas sidebar-mu */
+  color: white;
+  font-weight: bold;
+}
+
+.ahs-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.ahs-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.ahs-table td a {
+  color: blue;
+  text-decoration: none;
+}
+
+.ahs-table td a:hover {
+  text-decoration: underline;
+}

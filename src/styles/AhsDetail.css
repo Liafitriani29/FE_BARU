@@ -1,0 +1,36 @@
+h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background: #eaeaea;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}

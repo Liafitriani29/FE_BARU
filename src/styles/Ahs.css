@@ -1,0 +1,566 @@
+/* ====== Tabel AHS ====== */
+.ahs-content {
+  margin-top: 20px;
+}
+
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ahs-table th,
+.ahs-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.ahs-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #007bff;
+  /* 🔹 Warna biru tulisan header */
+}
+
+/* ====== Tombol Aksi ====== */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.view {
+  color: #2E1878;
+}
+
+button.edit {
+  color: #ffa500;
+}
+
+button.delete {
+  color: red;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+.content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+}
+
+.ahs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ahs-header h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.search-icon {
+  color: #888;
+}
+
+.btn-add {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s;
+}
+
+.btn-add:hover {
+  background: #43a047;
+}
+
+.ahs-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ahs-table th,
+.ahs-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.ahs-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-view:hover {
+  text-decoration: underline;
+}
+
+/* ===== DETAIL AHS ===== */
+.ahs-detail-container {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 950px;
+  margin: 30px auto;
+}
+
+.ahs-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ahs-detail-header h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.back-btn {
+  background-color: #1976d2;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #125ca3;
+}
+
+/* Tabel di halaman detail tetap sama gaya dengan AHSList */
+.ahs-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ahs-table th,
+.ahs-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.ahs-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+}
+
+.ahs-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.ahs-detail-container {
+  padding: 30px;
+  background: #f7f9fc;
+  border-radius: 12px;
+  min-height: 100vh;
+}
+
+.ahs-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaf1ff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-title {
+  color: #2e1878;
+  font-size: 24px;
+}
+
+.ahs-detail-header h2 {
+  margin: 0;
+  color: #2e1878;
+  font-weight: bold;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modern-table th {
+  background: #2e1878;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.modern-table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.modern-table tr:hover {
+  background: #f3f6ff;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* ====== Detail Page Layout ====== */
+.ahs-detail-container.wide {
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f7f9fc;
+  border-radius: 12px;
+  min-height: 100vh;
+}
+
+.ahs-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaf1ff;
+  border-radius: 10px;
+  padding: 18px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-title {
+  color: #2e1878;
+  font-size: 24px;
+}
+
+.ahs-detail-header h2 {
+  margin: 0;
+  color: #2e1878;
+  font-weight: bold;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ====== Card Container ====== */
+.detail-card.wide {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* ====== Table ====== */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modern-table th {
+  background: #2e1878;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.modern-table td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 14px;
+}
+
+.modern-table tr:hover {
+  background: #f3f6ff;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* ====== PERBAIKAN LEBAR TABEL AGAR RAPAT DAN RAPI ====== */
+.ahs-detail-container,
+.detail-card {
+  width: 95%;
+  /* isi area hampir penuh layar */
+  margin: 20px auto;
+  /* center */
+  box-sizing: border-box;
+}
+
+.detail-card {
+  overflow-x: auto;
+  /* biar tidak meluber kalau isi panjang */
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ====== TABEL RAPI DAN LEBAR SEMPURNA ====== */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* biar proporsional */
+}
+
+.modern-table th,
+.modern-table td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  word-wrap: break-word;
+  /* biar teks panjang tetap muat */
+}
+
+.modern-table th {
+  background: #2e1878;
+  color: white;
+  font-weight: 600;
+}
+
+.modern-table td {
+  background: #fdfdfd;
+}
+
+/* ====== RESPONSIVE AGAR TIDAK MELUBER DI LAYAR KECIL ====== */
+@media (max-width: 1024px) {
+
+  .ahs-detail-container,
+  .detail-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .modern-table th,
+  .modern-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+.layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.ahs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ahs-table th,
+.ahs-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.ahs-table th {
+  background-color: #f4f4f4;
+}
+
+/* GANTI MENJADI INI (di Ahs.css) */
+.table-container {
+  padding: 24px 0;
+  /* 24px atas-bawah, 0 kiri-kanan */
+}
+
+/* TAMBAHKAN INI DI Ahs.css UNTUK GARIS TABEL */
+
+/* Mengatur tabel agar rapi */
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Wajib agar garis menyatu */
+}
+
+/* Memberi garis pada SEMUA sel (header dan data) */
+.item-table th,
+.item-table td {
+  border: 1px solid #e5e7eb;
+  /* Garis abu-abu muda */
+  padding: 10px 12px;
+  /* Jarak tulisan dari garis */
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Memberi latar pada header tabel (th) */
+.item-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+/* Memberi latar pada footer (total) */
+.item-table tfoot td {
+  font-weight: bold;
+  background-color: #f9fafb;
+}
+
+.item-table tfoot .total-label {
+  text-align: right;
+}
+
+.table-container {
+  /* Padding atas/bawah 24px, tapi 0 untuk kiri/kanan */
+  padding: 24px 0;
+
+  /* INI ADALAH SOLUSINYA:
+    'overflow-x: auto' berarti:
+    "Jika konten di dalam (yaitu tabel) lebih lebar dari box ini,
+    secara otomatis tampilkan scrollbar horizontal di bagian bawah."
+  */
+  overflow-x: auto;
+}

@@ -1,0 +1,119 @@
+/* === 1. CONTAINER & TABLE RESPONSIVE === */
+.ahs-list-container {
+  width: 100%;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  /* Sesuaikan max-height dengan layout Anda, 68vh konsisten dgn sblmnya */
+  max-height: 68vh; 
+}
+
+/* === 2. TABEL UTAMA === */
+.ahs-table {
+  width: 100%;
+  border-collapse: separate; /* Gunakan separate untuk sticky header di Firefox/Safari */
+  border-spacing: 0;
+  min-width: 1000px;
+}
+
+/* Header Sticky Ungu */
+.ahs-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #2d1666; /* Biru Tua / Ungu Gelap */
+  color: white;
+  z-index: 10;
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Kolom aksi di header */
+.ahs-table thead th.sticky-action {
+  position: sticky;
+  right: 0; /* Menempel di kanan */
+  z-index: 11; /* Di atas sel lain */
+  border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Baris Data */
+.ahs-table tbody tr.ahs-row td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  color: #333;
+  vertical-align: middle;
+  background-color: white;
+  white-space: nowrap;
+}
+
+.ahs-table tbody tr.ahs-row:hover td {
+  background-color: #f9f9ff;
+}
+
+/* Baris Aktif (saat detail dibuka) */
+.ahs-table tbody tr.ahs-row.active td {
+  background-color: #e6e9ff; /* Warna highlight biru muda */
+}
+
+/* Pengaturan Kolom Spesifik */
+.col-deskripsi {
+  white-space: normal !important;
+  min-width: 200px;
+  max-width: 350px;
+}
+.col-hpp {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* === 3. KOLOM AKSI (ICON BUTTONS) === */
+.ahs-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  
+  /* Sticky di Kanan */
+  position: sticky;
+  right: 0;
+  background-color: white; /* Wajib agar tidak tembus pandang */
+}
+/* Pastikan background sticky juga berubah saat hover/aktif */
+.ahs-table tbody tr.ahs-row:hover td.ahs-actions { background-color: #f9f9ff; }
+.ahs-table tbody tr.ahs-row.active td.ahs-actions { background-color: #e6e9ff; }
+
+
+.btn-icon {
+  width: 32px; height: 32px;
+  border: none; border-radius: 4px;
+  cursor: pointer; color: white;
+  font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.2s;
+}
+.btn-icon:hover { opacity: 0.8; }
+
+.btn-view { background-color: #f1c40f; } /* Kuning */
+.btn-edit { background-color: #0000ff; } /* Biru */
+.btn-delete { background-color: #ff0000; } /* Merah */
+
+
+/* === 4. BARIS DETAIL === */
+.ahs-detail-row td {
+  padding: 0;
+  background: #fdfdfd;
+  border-left: 4px solid #0000ff; /* Garis biru di kiri */
+}
+
+.no-data-cell {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-style: italic;
+}
