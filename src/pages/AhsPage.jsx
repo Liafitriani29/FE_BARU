@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar"; // Pastikan path ini benar
 import AhsList from "../components/AhsList";
-import "../assets/styles/Ahs.css";
+import "./AhsPage.css";
 import { useNavigate } from "react-router-dom";
 
 const AhsPage = ({ dataAhsFromApp }) => {
